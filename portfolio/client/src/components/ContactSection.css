@@ -1,0 +1,233 @@
+/* ===== Contact Section ===== */
+.contact-section {
+  padding: 6rem 1.5rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Heading */
+.contact-heading-tag {
+  display: block;
+  text-align: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.875rem;
+  color: #6EE7B7;
+  margin-bottom: 0.5rem;
+}
+
+.contact-heading {
+  text-align: center;
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 2.75rem;
+  color: #F1F5F9;
+  margin: 0 0 0.5rem;
+}
+
+.contact-subheading {
+  text-align: center;
+  font-family: 'DM Sans', sans-serif;
+  color: #64748B;
+  font-size: 1rem;
+  margin-bottom: 3rem;
+}
+
+/* ===== Social Cards Grid ===== */
+.social-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 640px) {
+  .social-cards-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.social-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #141418;
+  border: 1px solid #1E1E2E;
+  border-radius: 12px;
+  padding: 14px 18px;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  cursor: pointer;
+}
+
+.social-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 24px rgba(110, 231, 183, 0.12);
+  border-color: #6EE7B733;
+}
+
+.social-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  flex-shrink: 0;
+  font-size: 1.25rem;
+}
+
+.social-card-icon--instagram {
+  background: rgba(252, 228, 236, 0.12);
+  color: #f472b6;
+}
+
+.social-card-icon--whatsapp {
+  background: rgba(232, 245, 233, 0.12);
+  color: #4ade80;
+}
+
+.social-card-icon--email {
+  background: rgba(252, 232, 230, 0.12);
+  color: #fb923c;
+}
+
+.social-card-icon--github {
+  background: rgba(245, 245, 245, 0.1);
+  color: #e2e8f0;
+}
+
+.social-card-info {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.social-card-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #64748B;
+  margin-bottom: 2px;
+}
+
+.social-card-value {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #F1F5F9;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ===== Contact Form ===== */
+.contact-form-wrapper {
+  background: #141418;
+  border: 1px solid #1E1E2E;
+  border-radius: 16px;
+  padding: 2rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-input,
+.contact-textarea {
+  width: 100%;
+  background: #0D0D0F;
+  border: 1px solid #1E1E2E;
+  border-radius: 8px;
+  padding: 12px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  color: #F1F5F9;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  box-sizing: border-box;
+}
+
+.contact-input::placeholder,
+.contact-textarea::placeholder {
+  color: #64748B;
+}
+
+.contact-input:focus,
+.contact-textarea:focus {
+  border-color: #6EE7B7;
+  box-shadow: 0 0 0 2px rgba(110, 231, 183, 0.15);
+}
+
+.contact-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-submit {
+  width: 100%;
+  padding: 14px;
+  background: #6EE7B7;
+  color: #0D0D0F;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.contact-submit:hover:not(:disabled) {
+  opacity: 0.9;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(110, 231, 183, 0.3);
+}
+
+.contact-submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Status Messages */
+.contact-status {
+  margin-top: 1rem;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.contact-status--success {
+  background: rgba(110, 231, 183, 0.1);
+  border: 1px solid rgba(110, 231, 183, 0.25);
+  color: #6EE7B7;
+}
+
+.contact-status--error {
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.25);
+  color: #f87171;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 639px) {
+  .contact-heading {
+    font-size: 2rem;
+  }
+  
+  .contact-form-wrapper {
+    padding: 1.25rem;
+  }
+  
+  .social-card-value {
+    font-size: 0.85rem;
+  }
+}

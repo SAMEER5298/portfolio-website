@@ -1,0 +1,35 @@
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #6EE7B7 #141418;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #141418;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6EE7B7;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5dd9a8;
+}
+
+::selection {
+  background: #6EE7B7;
+  color: #0D0D0F;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.animate-blink {
+  animation: blink 1s infinite;
+}
