@@ -51,7 +51,7 @@ export default function Contact() {
   };
 
   const socialLinks = [
-    { icon: FaGithub, href: 'https://github.com/sameerkhan', label: 'GitHub' },
+    { icon: FaGithub, href: 'https://github.com/SAMEER5298', label: 'GitHub' },
     { icon: FaLinkedin, href: 'https://linkedin.com/in/sameerkhan', label: 'LinkedIn' },
     { icon: FaXTwitter, href: 'https://x.com/sameerkhan', label: 'Twitter' },
   ];
@@ -83,55 +83,47 @@ export default function Contact() {
           className="bg-surface border border-border rounded-2xl p-8"
         >
           <form onSubmit={handleSubmit} className="space-y-4">
-            <div>
-              <input
-                type="text"
-                name="name"
-                placeholder="Your Name"
-                value={formData.name}
-                onChange={handleChange}
-                required
-                className="bg-background border border-border rounded-xl px-4 py-3 w-full text-text-primary placeholder-text-muted focus:outline-none focus:border-accent-mint transition"
-              />
-            </div>
-            <div>
-              <input
-                type="email"
-                name="email"
-                placeholder="Your Email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-                className="bg-background border border-border rounded-xl px-4 py-3 w-full text-text-primary placeholder-text-muted focus:outline-none focus:border-accent-mint transition"
-              />
-            </div>
-            <div>
-              <select
-                name="projectType"
-                value={formData.projectType}
-                onChange={handleChange}
-                required
-                className="bg-background border border-border rounded-xl px-4 py-3 w-full text-text-primary placeholder-text-muted focus:outline-none focus:border-accent-mint transition"
-              >
-                <option value="">Select Project Type</option>
-                <option value="Web App">Web App</option>
-                <option value="E-Commerce">E-Commerce</option>
-                <option value="AI App">AI App</option>
-                <option value="Consulting">Consulting</option>
-                <option value="Other">Other</option>
-              </select>
-            </div>
-            <div>
-              <textarea
-                name="message"
-                placeholder="Tell me about your project..."
-                rows={5}
-                value={formData.message}
-                onChange={handleChange}
-                required
-                className="bg-background border border-border rounded-xl px-4 py-3 w-full text-text-primary placeholder-text-muted focus:outline-none focus:border-accent-mint transition resize-none"
-              />
-            </div>
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+              className="bg-background border border-border rounded-xl px-4 py-3 w-full text-text-primary placeholder-text-muted focus:outline-none focus:border-accent-mint transition"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+              className="bg-background border border-border rounded-xl px-4 py-3 w-full text-text-primary placeholder-text-muted focus:outline-none focus:border-accent-mint transition"
+            />
+            <select
+              name="projectType"
+              value={formData.projectType}
+              onChange={handleChange}
+              required
+              className="bg-background border border-border rounded-xl px-4 py-3 w-full text-text-primary focus:outline-none focus:border-accent-mint transition"
+            >
+              <option value="">Select Project Type</option>
+              <option value="Web App">Web App</option>
+              <option value="E-Commerce">E-Commerce</option>
+              <option value="AI App">AI App</option>
+              <option value="Consulting">Consulting</option>
+              <option value="Other">Other</option>
+            </select>
+            <textarea
+              name="message"
+              placeholder="Tell me about your project..."
+              rows={5}
+              value={formData.message}
+              onChange={handleChange}
+              required
+              className="bg-background border border-border rounded-xl px-4 py-3 w-full text-text-primary placeholder-text-muted focus:outline-none focus:border-accent-mint transition resize-none"
+            />
             <button
               type="submit"
               disabled={loading}
@@ -163,13 +155,7 @@ export default function Contact() {
                 exit={{ opacity: 0, y: -10 }}
                 className="mt-4 p-4 bg-green-500/10 border border-green-500/30 rounded-xl flex items-center gap-3 text-green-400"
               >
-                <motion.div
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 1 }}
-                  transition={{ type: 'spring', stiffness: 200 }}
-                >
-                  <FaCheck />
-                </motion.div>
+                <FaCheck />
                 Message sent! I'll get back to you soon.
               </motion.div>
             )}
@@ -196,12 +182,12 @@ export default function Contact() {
           <div className="bg-surface border border-border rounded-2xl p-6 space-y-4">
             <div className="flex items-center gap-3 text-text-muted">
               <span>📍</span>
-              <span className="font-dm">Raebareli, Uttar Pradesh, India</span>
+              <span className="font-dm">Bhilad, Gujarat, India</span>
             </div>
             <div className="flex items-center gap-3 text-text-muted">
               <span>✉️</span>
-              <a href="mailto:hello@sameerkhan.dev" className="font-dm hover:text-accent-mint transition">
-                hello@sameerkhan.dev
+              <a href="mailto:sameerkhan86316@gmail.com" className="font-dm hover:text-accent-mint transition">
+                sameerkhan86316@gmail.com
               </a>
             </div>
             <div className="flex items-center gap-3 text-text-muted">
@@ -227,4 +213,7 @@ export default function Contact() {
             ))}
           </div>
         </motion.div>
-       
+      </div>
+    </section>
+  );
+}
