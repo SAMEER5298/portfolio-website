@@ -214,7 +214,7 @@ export default function ContactSection() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
             >
-              ❌ Something went wrong. Try again.
+
             </motion.div>
           )}
         </AnimatePresence>
